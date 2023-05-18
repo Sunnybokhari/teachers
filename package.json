@@ -11,7 +11,7 @@
     "start": "nodemon server/server.js",
     "client": "npm start --prefix teacher",
     "dev": "concurrently \"npm run teacher\" \"npm start\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix teacher && npm run build --prefix teacher"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix teacher && npm run build --prefix teacher"
   },
   "author": "",
   "license": "ISC",
